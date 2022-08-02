@@ -8,6 +8,7 @@ from .jas39 import *
 from .su57 import *
 from .uh60l import *
 
+from .f15ex import *
 
 def load_mods() -> None:
     """Loads all mods.

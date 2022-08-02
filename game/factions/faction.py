@@ -355,6 +355,9 @@ class Faction:
             self.remove_vehicle("SAM SA-14 Strela-3 manpad")
             self.remove_vehicle("SAM SA-24 Igla-S manpad")
             self.remove_vehicle("Polyana-D4M1 C2 node")
+        # f15ex
+        if not mod_settings.f15ex:
+            self.remove_aircraft("VSN_F15E_AA")
 
     def remove_aircraft(self, name: str) -> None:
         for i in self.aircrafts:

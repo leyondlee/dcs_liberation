@@ -166,6 +166,7 @@ class NewGameWizard(QtWidgets.QWizard):
             su57_felon=self.field("su57_felon"),
             frenchpack=self.field("frenchpack"),
             high_digit_sams=self.field("high_digit_sams"),
+            f15ex=self.field("f15ex"),
         )
 
         blue_faction = self.faction_selection_page.selected_blue_faction
@@ -669,6 +670,8 @@ class GeneratorOptions(QtWidgets.QWizardPage):
         self.registerField("frenchpack", frenchpack)
         high_digit_sams = QtWidgets.QCheckBox()
         self.registerField("high_digit_sams", high_digit_sams)
+        f15ex = QtWidgets.QCheckBox()
+        self.registerField("f15ex", f15ex)
 
         modHelpText = QtWidgets.QLabel(
             "<p>Select the mods you have installed. If your chosen factions support them, you'll be able to use these mods in your campaign.</p>"
@@ -714,6 +717,9 @@ class GeneratorOptions(QtWidgets.QWizardPage):
         modLayout_row += 1
         modLayout.addWidget(QtWidgets.QLabel("High Digit SAMs"), modLayout_row, 0)
         modLayout.addWidget(high_digit_sams, modLayout_row, 1)
+        modLayout_row += 1
+        modLayout.addWidget(QtWidgets.QLabel("F15EX"), modLayout_row, 0)
+        modLayout.addWidget(f15ex, modLayout_row, 1)
         modSettingsGroup.setLayout(modLayout)
 
         mlayout = QVBoxLayout()

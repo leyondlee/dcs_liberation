@@ -129,6 +129,7 @@ from pydcs_extensions.su57.su57 import Su_57
 from pydcs_extensions.uh60l.uh60l import KC130J, UH_60L
 from .flighttype import FlightType
 
+from pydcs_extensions.f15ex.f15ex import VSN_F15E_AA
 # All aircraft lists are in priority order. Aircraft higher in the list will be
 # preferred over those lower in the list.
 # TODO: These lists really ought to be era (faction) dependent.
@@ -193,6 +194,7 @@ CAP_CAPABLE = [
     P_47D_30bl1,
     P_47D_40,
     I_16,
+    VSN_F15E_AA,
 ]
 
 
