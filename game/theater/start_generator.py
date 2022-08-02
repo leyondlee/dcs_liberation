@@ -64,6 +64,7 @@ class ModSettings:
     frenchpack: bool = False
     high_digit_sams: bool = False
     f15ex: bool = False
+    eurofighter: bool = False
 
 
 class GameGenerator:

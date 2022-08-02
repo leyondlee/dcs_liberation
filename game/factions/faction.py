@@ -358,6 +358,9 @@ class Faction:
         # f15ex
         if not mod_settings.f15ex:
             self.remove_aircraft("VSN_F15E_AA")
+        # eurofighter
+        if not mod_settings.eurofighter:
+            self.remove_aircraft("Eurofighter")
 
     def remove_aircraft(self, name: str) -> None:
         for i in self.aircrafts:

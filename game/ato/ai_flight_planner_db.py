@@ -130,6 +130,8 @@ from pydcs_extensions.uh60l.uh60l import KC130J, UH_60L
 from .flighttype import FlightType
 
 from pydcs_extensions.f15ex.f15ex import VSN_F15E_AA
+from pydcs_extensions.eurofighter.eurofighter import Eurofighter
+
 # All aircraft lists are in priority order. Aircraft higher in the list will be
 # preferred over those lower in the list.
 # TODO: These lists really ought to be era (faction) dependent.
@@ -195,6 +197,7 @@ CAP_CAPABLE = [
     P_47D_40,
     I_16,
     VSN_F15E_AA,
+    Eurofighter,
 ]
 
 
@@ -279,6 +282,7 @@ CAS_CAPABLE = [
     WingLoong_I,
     MQ_9_Reaper,
     RQ_1A_Predator,
+    Eurofighter,
 ]
 
 
@@ -428,6 +432,7 @@ ANTISHIP_CAPABLE = [
     MosquitoFBMkVI,
     C_101CC,
     SH_60B,
+    Eurofighter,
 ]
 
 
@@ -505,6 +510,7 @@ RUNWAY_ATTACK_CAPABLE = [
     Bf_109K_4,
     FW_190D9,
     FW_190A8,
+    Eurofighter,
 ]
 
 # For any aircraft that isn't necessarily directly involved in strike
